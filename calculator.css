@@ -1,0 +1,49 @@
+
+
+
+.demo{
+    background-color: #333;
+    text-align: center;
+     width: 300px;
+     height: 350px;
+    
+    
+     
+
+}
+
+#result{
+    background-color:#a29898 ;
+    width: 292px;
+    height: 50px;
+    font-size:20px;
+    text-align: right;
+    
+}
+#result:hover{
+    box-shadow: 2px 2px 5px rgb(102, 99, 87);
+}
+
+.cell{
+    border-radius:5px;
+    background-color: #dddfff;
+    box-shadow:2px 2px 2px rgb(102, 99, 87);
+    font-size: 30px;
+    padding: 20px;
+
+
+}
+.cell:hover{
+    background-color: blueviolet;
+}
+    
+
+
+#history {
+    text-align: center  ;
+    border: 1px solid black;
+    height:600px;
+    width:500px;
+      
+
+}

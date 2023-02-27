@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculator.css">
+    <script src="https://kit.fontawesome.com/351fad2651.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+
+    <div id="calculator">
+        <input type="text" name="number" id="result" value="0"><br>
+        <tr><input type="text" name="number" id="result" class="input-2" disabled></tr>
+
+        <table border="1px solid " cellspacing="3" class="demo">
+
+
+
+            <tr style="background-color: red; color: black;">
+                <td class="cell" onclick="clearResult()">C</td>
+                <td class="cell" onclick="number()"><i class="fa-solid fa-clock-rotate-left"></i></td>
+                <td class="cell" onclick="delet()"><i class="fa-solid fa-delete-left"></i></td>
+                <td class="cell" onclick="number('/')">/</td>
+            </tr>
+
+
+
+            <tr>
+                <td class="cell" onclick="number(7)">7</td>
+                <td class="cell" onclick="number(8)">8</td>
+                <td class="cell" onclick="number(9)">9</td>
+                <td class="cell" onclick="number('*')">*</td>
+            </tr>
+
+            <tr>
+                <td class="cell" onclick="number(4)">4</td>
+                <td class="cell" onclick="number(5)">5</td>
+                <td class="cell" onclick="number(6)">6</td>
+                <td class="cell" onclick="number('-')">-</td>
+            </tr>
+
+            <tr>
+                <td class="cell" onclick="number(1)">1</td>
+                <td class="cell" onclick="number(2)">2</td>
+                <td class="cell" onclick="number(3)">3</td>
+                <td class="cell" onclick="number('+')">+</td>
+            </tr>
+
+            <tr>
+                <td class="cell" onclick="number(00)">00</td>
+                <td class="cell" onclick="number(0)">0</td>
+                <td class="cell" onclick="number('.')">.</td>
+                <td class="cell" onclick="sum()">=</td>
+            </tr>
+
+
+        </table>
+    </div><br>
+
+
+    
+
+
+
+
+    <script src="calculator.js"></script>
+
+</body>
+
+</html>
