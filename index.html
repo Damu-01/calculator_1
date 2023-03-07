@@ -8,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="calculator.css">
     <script src="https://kit.fontawesome.com/351fad2651.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -15,16 +16,16 @@
 
 
     <div id="calculator">
-        <input type="text" name="number" id="result" value="0"><br>
-        <tr><input type="text" name="number" id="result" class="input-2" disabled></tr>
+        <input type="text" name="number" id="result"  value="0" disabled><br>
+        <input type="text" name="number" id="result" class="input-2" value="0" >
 
         <table border="1px solid " cellspacing="3" class="demo">
 
 
 
-            <tr style="background-color: red; color: black;">
+            <tr>
                 <td class="cell" onclick="clearResult()">C</td>
-                <td class="cell" onclick="number()"><i class="fa-solid fa-clock-rotate-left"></i></td>
+                <td class="cell" onclick="cal_history()"><i class="fa-solid fa-clock-rotate-left"></i></td>
                 <td class="cell" onclick="delet()"><i class="fa-solid fa-delete-left"></i></td>
                 <td class="cell" onclick="number('/')">/</td>
             </tr>
@@ -53,7 +54,7 @@
             </tr>
 
             <tr>
-                <td class="cell" onclick="number(00)">00</td>
+                <td class="cell" onclick="number('00')">00</td>
                 <td class="cell" onclick="number(0)">0</td>
                 <td class="cell" onclick="number('.')">.</td>
                 <td class="cell" onclick="sum()">=</td>
@@ -63,8 +64,25 @@
         </table>
     </div><br>
 
+    <div id="history1">
+        <h1>History</h1>
+        <div><i class="fa-solid fa-trash-can" id="del-his" onclick="CalHis()"></i></div>
+        <div id="history">
 
-    
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
 
 
 
