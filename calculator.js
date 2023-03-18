@@ -74,18 +74,21 @@ function sum() {
 }
 
 function cal_history() {
-    let his = document.getElementById('history');
+ let x= document.getElementById('history1');
+          
+        if(x.style.display ==="none") 
+        {     
+         x.style.display = "block";
+        }
+        
+
+     
+     let his = document.getElementById('history');
     his.innerHTML += inputFeild.value + '<br>' + solve + '=' + '<br>';
+   
 
 
 }
-
-// function CalHis() {
-//     // alert('hii')
-//     document.getElementById('history1 history').value = '0';
-
-// }
-
 
 
 
