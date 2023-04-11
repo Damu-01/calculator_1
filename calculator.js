@@ -90,5 +90,9 @@ function cal_history() {
 
 }
 
+document.getElementById('clear').addEventListener('click',()=>{
+    document.getElementById('history').innerHTML=null;
+})
+
 
 
